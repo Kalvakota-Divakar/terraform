@@ -1,5 +1,5 @@
 # Terraform
-![Terraform Setup](terraform.jpg)
+![Terraform Setup](terraform/terraform.jpg)
 
 ### Terraform
 
