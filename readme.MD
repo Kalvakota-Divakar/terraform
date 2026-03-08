@@ -1,5 +1,5 @@
 # Terraform
-![Terraform Setup](terraform/terraform.jpg)
+![Terraform Setup](https://github.com/Kalvakota-Divakar/terraform/blob/main/terraform.jpg?raw=true)
 
 ### Terraform
 
