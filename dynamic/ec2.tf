@@ -19,30 +19,18 @@ resource "aws_security_group" "allow_tls" {
     cidr_blocks      = ["0.0.0.0/0"]
     ipv6_cidr_blocks = ["::/0"]
   }
-
-    ingress {
-    from_port        = 22
-    to_port          = 22
+   # ingress is special variable here
+    dynamic "ingress" {
+    for_each = toset(var.ingress_rules)
+    content {
+    from_port        = ingress.value.port
+    to_port          = ingress.value.port
     protocol         = "tcp"
-    cidr_blocks      = ["0.0.0.0/0"]
-    ipv6_cidr_blocks = ["::/0"]
+    cidr_blocks      = ingress.value.cidr_blocks
+    description       = ingress.value.description
+  }
   }
 
- ingress {
-    from_port        = 3306
-    to_port          = 3306
-    protocol         = "tcp"
-    cidr_blocks      = ["0.0.0.0/0"]
-    ipv6_cidr_blocks = ["::/0"]
-  }
-
- ingress {
-    from_port        = 443
-    to_port          = 443
-    protocol         = "tcp"
-    cidr_blocks      = ["0.0.0.0/0"]
-    ipv6_cidr_blocks = ["::/0"]
-  }
 
   tags = {
     Name = "allow-all-terraform"

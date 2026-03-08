@@ -1,16 +1,15 @@
 resource "aws_instance" "example" {
-  ami           = "ami-0220d79f3f480ecf5"
+  ami           = data.aws_ami.DevOps.id
   instance_type = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.allow_tls.id]
-
+  vpc_security_group_ids =[aws_security_group.allow_tls.id]
   tags = {
-    Name = "terraform-state-demo"
-    Project = "roboshop"
+    Name = "Terraform"
+    Project= "roboshop"
   }
 }
 
 resource "aws_security_group" "allow_tls" {
-  name        = "allow-all-terraform" # this is for AWS account
+  name        = "allow-all-terraform" # this is for aws account
   description = "Allow TLS inbound traffic and all outbound traffic"
 
   egress {
@@ -21,7 +20,7 @@ resource "aws_security_group" "allow_tls" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
-  ingress {
+    ingress {
     from_port        = 0
     to_port          = 0
     protocol         = "-1"
