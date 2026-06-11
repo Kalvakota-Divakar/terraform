@@ -1,11 +1,9 @@
-# Terraform
-![Terraform Setup](https://github.com/Kalvakota-Divakar/terraform/blob/main/terraform.jpg?raw=true)
 
 # 🚀 Terraform on AWS – Infrastructure as Code (IaC)
 
 ![Terraform Setup](https://github.com/Kalvakota-Divakar/terraform/blob/main/terraform.jpg?raw=true)
 
-## 📖 Overview
+## Overview
 
 This repository demonstrates practical implementation of **Terraform**, a leading **Infrastructure as Code (IaC)** tool, to provision and manage AWS infrastructure efficiently.
 
@@ -13,13 +11,13 @@ It contains hands-on examples covering core Terraform concepts that are commonly
 
 ---
 
-## ✨ Why Terraform?
+##  Why Terraform?
 
 Managing cloud resources manually becomes difficult as infrastructure grows. Terraform solves this challenge by allowing infrastructure to be defined, versioned, and managed using code.
 
 ### Key Benefits of Infrastructure as Code (IaC)
 
-### 🔄 Version Control
+### Version Control
 
 Infrastructure configurations are maintained in Git, enabling:
 
@@ -28,7 +26,7 @@ Infrastructure configurations are maintained in Git, enabling:
 * Rollback capabilities
 * Code reviews and approvals
 
-### 🌍 Consistent Infrastructure
+###  Consistent Infrastructure
 
 Terraform helps eliminate configuration drift across environments such as:
 
@@ -39,7 +37,7 @@ Terraform helps eliminate configuration drift across environments such as:
 
 This ensures reliable and repeatable deployments.
 
-### ⚙️ Automated Infrastructure Management
+### Automated Infrastructure Management
 
 Terraform simplifies the entire infrastructure lifecycle:
 
@@ -48,7 +46,7 @@ Terraform simplifies the entire infrastructure lifecycle:
 * Destroy unused infrastructure when required
 * Reduce manual errors
 
-### 📋 Infrastructure Visibility
+### Infrastructure Visibility
 
 Infrastructure definitions act as documentation, making it easy to understand:
 
@@ -56,11 +54,11 @@ Infrastructure definitions act as documentation, making it easy to understand:
 * How resources are configured
 * Dependencies between components
 
-### 💰 Cost Optimization
+### Cost Optimization
 
 Infrastructure can be provisioned only when needed and destroyed afterward, helping organizations reduce unnecessary cloud expenses.
 
-### 🔗 Automatic Dependency Management
+### Automatic Dependency Management
 
 Terraform automatically determines dependencies between resources during:
 
@@ -70,7 +68,7 @@ Terraform automatically determines dependencies between resources during:
 
 ensuring operations occur in the correct order.
 
-### 🧩 Modular Infrastructure
+###  Modular Infrastructure
 
 Terraform supports reusable modules that enable:
 
@@ -81,7 +79,7 @@ Terraform supports reusable modules that enable:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 * Terraform
 * AWS EC2
@@ -90,7 +88,7 @@ Terraform supports reusable modules that enable:
 
 ---
 
-## 📂 Concepts Covered
+## Concepts Covered
 
 | Concept        | Description                        |
 | -------------- | ---------------------------------- |
@@ -108,7 +106,7 @@ Terraform supports reusable modules that enable:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Clone the Repository
 
@@ -143,7 +141,7 @@ terraform destroy
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 Through this repository, I gained hands-on experience in:
 
@@ -155,7 +153,7 @@ Through this repository, I gained hands-on experience in:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Divakar Kalvakota**
 
