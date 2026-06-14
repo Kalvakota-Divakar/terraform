@@ -4,9 +4,7 @@ resource "aws_instance" "example" {
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   
    # self is the special variable that represents the current resource being created. It is used to access the attributes of the resource, such as its ID and private IP address.
-  provisioner "local-exec" {
-    command = "echo ${self.public_ip} > inventory.ini"
-  }
+  
 
   provisioner "local-exec" {
     command = "exit 1"
